@@ -14,7 +14,7 @@ namespace PHIT
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            MainPage = new LoginScreen();
         }
 
         protected override void OnStart()
