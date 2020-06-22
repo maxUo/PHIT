@@ -5,21 +5,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PHIT.Views.LoginScreen"
-             BackgroundImageSource="Backgrounds/LoginBack.jpg"
-             >
-    <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+             BackgroundImageSource="Backgrounds/LoginBack.jpg">
 
-            <ScrollView Grid.Row="1">
-                <StackLayout Orientation="Vertical" Spacing="10">
-                    <Entry Placeholder="Username or email" FontFamily="FuturaMedium" />
-                    <Entry Placeholder="Password" IsPassword="true" FontFamily="FuturaMedium"/>
-                    <Button Text="Sign in" FontFamily="FuturaMedium" FontSize="Small" ></Button>
-                </StackLayout>
-            </ScrollView>
-        </Grid>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="10">
+
+            <Entry x:Name="Username" Text="{Binding Username}"
+                   Placeholder="Username or email"
+                   FontFamily="FuturaMedium" />
+
+            <Entry x:Name="Password" Text="{Binding Password}"
+                   Placeholder="Password"
+                   IsPassword="true"
+                   FontFamily="FuturaMedium"
+                   IsSpellCheckEnabled="false"
+                   IsTextPredictionEnabled="false"/>
+
+            <Button Command="{Binding LoginCommand}" Text="Sign in"
+                    FontFamily="FuturaMedium"
+                    FontSize="Small" />
+        </StackLayout>
     </ContentPage.Content>
+
 </ContentPage>

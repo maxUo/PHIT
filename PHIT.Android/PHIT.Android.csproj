@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -73,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PHIT\PHIT.csproj">
-      <Project>{BF15A988-2FAF-4393-B5DA-ED4DEE33BD8D}</Project>
+      <Project>{EAEE8B85-A1B0-4E46-A0A7-34B993359ACD}</Project>
       <Name>PHIT</Name>
     </ProjectReference>
   </ItemGroup>

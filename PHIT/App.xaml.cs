@@ -1,7 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using PHIT.Services;
+﻿using Xamarin.Forms;
 using PHIT.Views;
 
 namespace PHIT
@@ -11,22 +8,7 @@ namespace PHIT
 
         public App()
         {
-            InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
             MainPage = new LoginScreen();
-        }
-
-        protected override void OnStart()
-        {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
         }
     }
 }
