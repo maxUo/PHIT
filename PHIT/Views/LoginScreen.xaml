@@ -25,6 +25,7 @@
                    HorizontalOptions="Center" />
 
             <Entry x:Name="Password" Text="{Binding Password}"
+                   Margin="15 0 15"
                    PlaceholderColor="#FFFFFF"
                    Placeholder="Password"
                    BackgroundColor="#85DC91"
@@ -36,17 +37,41 @@
                    WidthRequest="{OnPlatform iOS=350, Android=350}"
                    HorizontalOptions="Center" />
 
-            <Button Command="{Binding LoginCommand}" StyleClass="signin"
+            <Button Command="{Binding LoginCommand}"
                     Text="Sign in"
                     TextColor="#FFFFFF"
                     FontFamily="FuturaMedium"
                     FontSize="15"
                     WidthRequest="{OnPlatform iOS=350, Android=350}"
                     BorderColor="#88DC94"
-                    BorderRadius="5"
-                    BorderWidth="1"
+                    BorderRadius="7"
+                    BorderWidth="3"
                     BackgroundColor="Transparent"
                     HorizontalOptions="Center" />
+
+            <Grid Margin="20 0 0 0"
+                  HorizontalOptions="Center"
+                  HeightRequest="{OnPlatform iOS=25, Android=25}"
+                  WidthRequest="{OnPlatform iOS=350, Android=350}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.55*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Forgot your login data?"
+                       TextColor="#FFFFFF"
+                       Grid.Column="0"
+                       Padding="10"
+                       FontFamily="FuturaMedium"
+                       FontSize="15" />
+                <Button Text="Contact us for help"
+                        TextColor="#FFFFFF"
+                        Grid.Column="1"
+                        Padding="10"
+                        FontFamily="FuturaMedium"
+                        Font="Bold"
+                        FontSize="15" />
+            </Grid>
+            
         </StackLayout>
     </ContentPage.Content>
 
