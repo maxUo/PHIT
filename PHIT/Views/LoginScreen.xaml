@@ -71,29 +71,6 @@
                         Font="Bold"
                         FontSize="15" />
             </Grid>
-
-            <Grid Margin="20,0,0,0"
-                  HorizontalOptions="Center"
-                  HeightRequest="{OnPlatform iOS=25, Android=25}"
-                  WidthRequest="{OnPlatform iOS=350, Android=350}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.55*" />
-                    <ColumnDefinition Width="0.5*" />
-                </Grid.ColumnDefinitions>
-                <Label Text="Still not have an account?"
-                       TextColor="#FFFFFF"
-                       Grid.Column="0"
-                       Padding="10"
-                       FontFamily="FuturaMedium"
-                       FontSize="15" />
-                <Button Text="Sign up"
-                        TextColor="#FFFFFF"
-                        Grid.Column="1"
-                        Padding="10"
-                        FontFamily="FuturaMedium"
-                        Font="Bold"
-                        FontSize="15" />
-            </Grid>
             
         </StackLayout>
     </ContentPage.Content>
