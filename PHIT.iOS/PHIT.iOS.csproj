@@ -129,11 +129,11 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\PHIT\PHIT.csproj">
-      <Project>{BF15A988-2FAF-4393-B5DA-ED4DEE33BD8D}</Project>
+      <Project>{EAEE8B85-A1B0-4E46-A0A7-34B993359ACD}</Project>
       <Name>PHIT</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\LoginBack.jpg" />
+    <BundleResource Include="Resources\LoginScreen.jpg" />
   </ItemGroup>
 </Project>

@@ -7,9 +7,7 @@
              x:Class="PHIT.App">
 
     <Application.Resources>
-        <ResourceDictionary>
-            <!--Global Styles-->
-        </ResourceDictionary>
+        
     </Application.Resources>
     
 </Application>

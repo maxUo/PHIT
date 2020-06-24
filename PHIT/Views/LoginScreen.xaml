@@ -3,27 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:PHIT"
              mc:Ignorable="d"
-             x:Class="PHIT.Views.LoginScreen"
-             BackgroundImageSource="Backgrounds/LoginBack.jpg">
-
+             BackgroundImage="LoginScreen.jpg"
+             x:Class="PHIT.Views.LoginScreen">
+    
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Spacing="10">
+        <StackLayout>
+            <Image x:Name="Logo" Source="{local:ImageResource PHIT.Resources.Images.Logo.png}"
+                   WidthRequest="{OnPlatform iOS=250, Android=250}"
+                   HeightRequest="{OnPlatform iOS=300, Android=300}"
+                   HorizontalOptions="Center"></Image>
 
             <Entry x:Name="Username" Text="{Binding Username}"
+                   PlaceholderColor="#FFFFFF"
                    Placeholder="Username or email"
-                   FontFamily="FuturaMedium" />
+                   BackgroundColor="#85DC91"
+                   WidthRequest="{OnPlatform iOS=350, Android=350}"
+                   FontFamily="FuturaMedium"
+                   FontSize="15"
+                   HorizontalOptions="Center" />
 
             <Entry x:Name="Password" Text="{Binding Password}"
+                   PlaceholderColor="#FFFFFF"
                    Placeholder="Password"
+                   BackgroundColor="#85DC91"
                    IsPassword="true"
                    FontFamily="FuturaMedium"
+                   FontSize="15"
                    IsSpellCheckEnabled="false"
-                   IsTextPredictionEnabled="false"/>
+                   IsTextPredictionEnabled="false"
+                   WidthRequest="{OnPlatform iOS=350, Android=350}"
+                   HorizontalOptions="Center" />
 
-            <Button Command="{Binding LoginCommand}" Text="Sign in"
+            <Button Command="{Binding LoginCommand}" StyleClass="signin"
+                    Text="Sign in"
+                    TextColor="#FFFFFF"
                     FontFamily="FuturaMedium"
-                    FontSize="Small" />
+                    FontSize="15"
+                    WidthRequest="{OnPlatform iOS=350, Android=350}"
+                    BorderColor="#88DC94"
+                    BorderRadius="5"
+                    BorderWidth="1"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 
